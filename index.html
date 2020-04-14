@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>主页 - Custom Actor Model</title>
+
+    <!-- Scripts -->
+    <script src="./app.js" defer></script>
+
+    <!-- Styles -->
+    <link href="./app.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="main-header">
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        Custom Actor Model
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./model">模型库</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./upload">上传</a>
+                            </li>
+                                                    </ul>
+                        
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Authentication Links -->
+                                                            <li class="nav-item">
+                                    <a class="nav-link" href="./login">登录</a>
+                                </li>
+                                                                    <li class="nav-item">
+                                        <a class="nav-link" href="./register">注册</a>
+                                    </li>
+                                                                                        <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Language <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="./lang/en">English</a>
+                                    <a class="dropdown-item" href="./lang/zh-CN">中文（简体）</a>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="wallpaper" style="background-image: url(./asset/homepage-bakcground.jpg); height: 720px; background-size: cover">
+    <div class="h-100" style="background: rgba(13, 60, 85, 0.3)">
+        <div class="splash">
+            <h1 class="splash-head">Custom Actor Model</h1>
+            <h3 class="splash-subhead">让您随心所欲定制 MiniWorld 实体模型</h3>
+            <div>
+                <a class="btn-home btn mx-4 text-white" href="./model">模型库</a>
+                <a class="btn-home btn mx-4 text-white" href="https://www.curseforge.com/minicraft/mc-mods/custom-player-model-cpm">下载</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="homepage-intro">
+    <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-lg-3">
+                <i class="fa fa-cloud-download" style="font-size: 64px"></i>
+                <h3 class="mt-3"><a href="" class="text-black-50">模型配置</a></h3>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-cubes" style="font-size: 64px"></i>
+                <h3 class="mt-3"><a href="/Modeling" class="text-black-50">模型制作</a></h3>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-qq" style="font-size: 64px"></i>
+                <h3 class="mt-3"><a href="https://jq.qq.com/?_wv=1027&k=5MApmN9" class="text-black-50">加入 QQ 群</a></h3>
+            </div>
+            <div class="col-lg-3">
+                <i class="fab fa-discord" style="font-size: 64px"></i>
+                <h3 class="mt-3"><a href="https://discord.gg/uVT39n5" class="text-black-50">加入 Discord</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="homepage-intro">
+    <div class="container">
+            <div class="col-lg-12 mb-5">
+            <h3><a class="text-black-50" href="">
+                                    模组简介
+                            </a></h3>
+            <p>
+                                    Custom Actor Model
+
+
+
+说明
+此工具允许您使用JSON文件自定义玩家模型。不仅仅是方块，更有表达式计算、飘带系统、粒子系统以丰富模型效果，提供极高的可自定义程度。同时，一个编辑良
+                                <a href="">继续阅读 ...</a>
+            </p>
+        </div>
+            <div class="col-lg-12 mb-5">
+            <h3><a class="text-black-50" href="/Schema">
+                                    JSON 模型格式
+                            </a></h3>
+            <p>
+                                    概况
+自定义实体模型(CAM)允许您使用JSON来自定义骨骼，方块，平面，飘带和粒子，结合强大的表达式功能来自定义模型外观。
+主JSON文件
+每个模型包必须包含一个名为“ model.json”的js
+                                <a href="/Schema">继续阅读 ...</a>
+            </p>
+        </div>
+            <div class="col-lg-12 mb-5">
+            <h3><a class="text-black-50" href="/Modeling">
+                                    模型制作
+                            </a></h3>
+            <p>
+                                    制作新模型
+Actorbench是一款建模软件，旨在创建由盒子组成的3D模型。 它是完全免费的。 在这里，我们为Actorbench提供了一个导出插件，以导出CAM模型，将其拖动到Actorbenc
+                                <a href="">继续阅读 ...</a>
+            </p>
+        </div>
+        </div>
+</div>
+<div class="homepage-footer py-2">
+    <div class="container">
+        Custom Actor Model
+    </div>
+</div>
+            </div>
+    </body>
+</html>
